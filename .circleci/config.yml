@@ -98,7 +98,7 @@ jobs:
             command: |
               apk add --no-cache git openssh
               npm install -g --silent gh-pages@2.0.1
-              git config user.email "circleci@dashboard-widget"
+              git config user.email "wassim.zouitene@efrei.net"
               git config user.name "CircleCI"
         - add_ssh_keys:
             fingerprints:
