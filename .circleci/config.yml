@@ -98,11 +98,11 @@ jobs:
             command: |
               apk add --no-cache git openssh
               npm install -g --silent gh-pages@2.0.1
-              git config user.email "circleci@dashboard-widget"
-              git config user.name "CircleCI"
+              git config user.email "wassim.zouitene@efrei.net"
+              git config user.name "wassten"
         - add_ssh_keys:
             fingerprints:
-              - "db:bf:2d:63:8e:96:6f:d6:14:d0:8d:59:eb:52:54:94"
+              - "28:e5:f0:29:a8:8d:2b:24:57:9d:3c:a9:0b:fc:4c:79"
         - run:
             name: Deploy docs to gh-pages branch
             command: gh-pages --dist ./dist --message "[ci skip]"
